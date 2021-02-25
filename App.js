@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View,SafeAreaView} from 'react-native';
+import { StyleSheet, Text, View, ImageBackground} from 'react-native';
+
+import Caritem from './components/caritems'
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello world</Text>
+    <View style={styles.container}>
+      
+    <Caritem/>
+
       <StatusBar style="auto" />
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -18,4 +22,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  
 });
