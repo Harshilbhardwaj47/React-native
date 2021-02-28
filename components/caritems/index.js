@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import styles from './styles'
+import Stylebutton from '../StyleButton'
 
 const Caritem = (props) =>  {
     return (
@@ -8,7 +9,7 @@ const Caritem = (props) =>  {
 
     <ImageBackground
 
-     source={require('../../assets/images/ModelX.jpeg')}
+     source={require('../../assets/images/ModelS.jpeg')}
      style={styles.image}
      />
 
@@ -16,7 +17,7 @@ const Caritem = (props) =>  {
     <Text style={styles.title}>Model S</Text>
     <Text style={styles.subtutle}>Starting at $45,680</Text>
     </View>
-
+    <Stylebutton/>
     </View>
     );
 };
