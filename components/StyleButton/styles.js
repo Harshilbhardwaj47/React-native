@@ -7,7 +7,7 @@ container: {
 },
 
 Button: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     height: 40,
     borderRadius: 20,
     justifyContent: 'center',
@@ -19,6 +19,7 @@ text: {
     fontWeight: '500',
     textTransform: 'uppercase',
 },
+
 
 });
 

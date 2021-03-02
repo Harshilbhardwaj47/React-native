@@ -8,7 +8,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       
-    <Caritem/>
+    <Caritem 
+    name={"Model S"} 
+    tagline={"starting at 59,999"}
+    image={require('./assets/images/ModelS.jpeg')}
+    />
 
       <StatusBar style="auto" />
     </View>
