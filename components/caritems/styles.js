@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
         bottom: 50,
         width: '100%',
       },
+
 });
 
 export default styles;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, ImageBackground} from 'react-native';
+import {View, Text, ImageBackground, Button} from 'react-native';
 import styles from './styles'
 import Stylebutton from '../StyleButton'
 
@@ -21,15 +21,17 @@ const Caritem = (props) =>  {
     <Text style={styles.subtutle}>{tagline}</Text>
     </View>
    
-   <View styles = {styles.buttoncontainer}>
-   <Stylebutton type="primary" 
+   <View style = {styles.buttoncontainer}>
+   <Stylebutton 
+    type="primary" 
     content={"CUSTOM ORDER"}
     onPress={() => {
         console.warn("custom order was pressed")
     }}
     />
-
-    <Stylebutton type="secondary" 
+       
+    <Stylebutton
+     type="secondary" 
     content={"EXISTING INVENTORY"}
     onPress={() => {
         console.warn("existing inventory was pressed")
