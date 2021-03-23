@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "FirstPro",
+    "name": "TeslaCloneList",
     "slug": "FirstPro",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/Harshilbhardwaj47/React-native"
   }
 }

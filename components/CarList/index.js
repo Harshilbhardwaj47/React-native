@@ -1,11 +1,21 @@
-import react from 'react';
-import { View } from 'react';
-import {View, Text} from 'react-native';
+import React from 'react';
+
+import {View, Text, FlatList, Dimensions} from 'react-native';
+import Caritem from "../caritems";
+import styles from "./styles";
+import cars from "./cars";
 
 const CarsList = (props) => {
  return(
- <View>
-     <Text>Not just a component</Text>
+ <View style={styles.container}>
+    <FlatList 
+    data={cars}
+    renderItem={({item})=> <Caritem car={item}/>}
+    showsVerticalScrollIndicator={false}
+    snapToAlignment={'start'}
+    decelerationRate={'normal'}
+    snapToInterval={Dimensions.get('window').height}
+    />
  </View>
 
  );
